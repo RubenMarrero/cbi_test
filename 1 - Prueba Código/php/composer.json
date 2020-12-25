@@ -1,0 +1,23 @@
+{
+    "name": "cbi/prueba",
+    "description": "prueba para candidatos de cbi",
+    "type": "project",
+	"scripts": {
+		"test": "vendor/bin/phpunit"
+	},
+	"autoload": {
+		"files": [
+			"src/autoload.php"
+		]
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Cbi\\Tests\\": "test/"
+		}
+	},
+    "require-dev": {
+        "phpunit/phpunit": "^6.0",
+        "phpunit/php-code-coverage": "^5.0"
+    },
+    "require": {}
+}
